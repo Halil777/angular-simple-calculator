@@ -1,0 +1,22 @@
+<div class="calculator">
+  <div class="display">{{ displayValue }}</div>
+  <div class="keypad">
+    <button (click)="onClearClick()">C</button>
+    <button (click)="onOperatorClick('/')">÷</button>
+    <button (click)="onOperatorClick('*')">x</button>
+    <button (click)="onDigitClick('7')">7</button>
+    <button (click)="onDigitClick('8')">8</button>
+    <button (click)="onDigitClick('9')">9</button>
+    <button (click)="onOperatorClick('-')">-</button>
+    <button (click)="onDigitClick('4')">4</button>
+    <button (click)="onDigitClick('5')">5</button>
+    <button (click)="onDigitClick('6')">6</button>
+    <button (click)="onOperatorClick('+')">+</button>
+    <button (click)="onDigitClick('1')">1</button>
+    <button (click)="onDigitClick('2')">2</button>
+    <button (click)="onDigitClick('3')">3</button>
+    <button class="zero" (click)="onDigitClick('0')">0</button>
+    <button (click)="onDecimalClick()">.</button>
+    <button (click)="onEqualClick()">=</button>
+  </div>
+</div>

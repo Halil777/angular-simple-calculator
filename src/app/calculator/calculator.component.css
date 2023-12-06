@@ -1,0 +1,36 @@
+.calculator {
+  max-width: 400px;
+  margin: 50px auto;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.display {
+  padding: 10px;
+  background-color: #f2f2f2;
+  font-size: 24px;
+  text-align: right;
+}
+
+.keypad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  cursor: pointer;
+}
+
+button.zero {
+  grid-column: span 2;
+}
+
+button:active {
+  background-color: #45a049;
+}
